@@ -1,0 +1,1 @@
+It is a cloud based web application implemented using Amazon RDS, S3, SES, SNS, Elastic Transcoder & Elastic Beanstalk
