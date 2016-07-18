@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+
+	<package name="user" extends="struts-default" namespace="/">
+		<action name="login" method="login" class="action.BaseAction">
+			<result name="success">home.jsp</result>
+			<result name="input">index.jsp</result>
+		</action>
+		<action name="register" method="register" class="action.BaseAction">
+			<result name="success">home.jsp</result>
+			<result name="input">register.jsp</result>
+		</action>
+		<action name="update" method="updateUser" class="action.BaseAction">
+			<result name="success">manage_account.jsp</result>
+			<result name="input">manage_account.jsp</result>
+		</action>
+		<action name="logout" method="logout" class="action.BaseAction">
+			<result name="success">index.jsp</result>
+		</action>
+		<action name="search" method="search" class="action.BaseAction">
+			<result name="success">manage_account.jsp</result>
+		</action>
+		<action name="updateDB" method="updateDB" class="action.BaseAction">
+			<result name="success">home.jsp</result>
+			<result name="input">home.jsp</result>
+		</action>
+		<action name="startConvert" method="startConvert" class="action.BaseAction">
+			<result name="success">downloadBlock.jsp</result>
+			<result name="input">downloadBlock.jsp</result>
+		</action>
+		<action name="verifyEmail" method="verifyEmail" class="action.BaseAction">
+			<result name="success">home.jsp</result>
+			<result name="input">home.jsp</result>
+		</action>
+	</package>
+</struts>

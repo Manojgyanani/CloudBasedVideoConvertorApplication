@@ -1,0 +1,36 @@
+.inlineBlock {
+	display: inline-block;
+}
+
+.paddingLeft0 {
+	padding-left: 0px
+}
+
+.title_logo {
+	padding-left: 20%;
+	padding-top: 4%;
+	font-size: 350%;
+	letter-spacing: -1px;
+	line-height: 1;
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+@media ( min-width : 768px) {
+	.label_reg {
+		width: 200px;
+		text-align: right;
+		padding-left: 0px;
+	}
+}
+
+.centerAlign {
+	text-align: center
+}
+
+#login {
+	padding: 10px;
+	padding-bottom: 50px;
+	border-width: thin;
+	border-style: solid;
+}
